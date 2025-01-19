@@ -1,0 +1,7 @@
+luigi==3.5.0
+pandas==2.2.1
+python-dotenv==1.0.1
+SQLAlchemy==2.0.28
+dbt-postgres==1.7.8
+setuptools
+protobuf==4.25.3

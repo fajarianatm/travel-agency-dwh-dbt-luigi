@@ -1,0 +1,12 @@
+pactravel:
+  outputs:
+    dev:
+      dbname: pactravel-dwh
+      host: localhost
+      pass: 'pass123'
+      port: 5442
+      schema: pactravel_final
+      threads: 4
+      type: postgres
+      user: postgres
+  target: dev

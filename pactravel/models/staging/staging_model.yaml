@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: pactravel-dwh
+    database: pactravel-dwh
+    schema: pactravel_staging
+    tables:
+      - name: aircrafts
+        description: "Aircraft data with IATA and ICAO information."
+      - name: airlines
+        description: "Airline data along with country of origin, IATA, and ICAO."
+      - name: airports
+        description: "Informasi tentang bandara, termasuk lokasi."
+      - name: customers
+        description: "Customer information."
+      - name: flight_bookings
+        description: "Detailed flight ticket booking information, including data about passengers, airlines, airports, flight schedules, ticket prices, and seat allocations."
+      - name: hotel
+        description: "Hotel data with address and review score."
+      - name: hotel_bookings
+        description: "information about hotel bookings made by customers, including details about check-in and check-out dates, booking prices, and the availability of breakfast."
