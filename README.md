@@ -45,7 +45,7 @@
   ```
 
 ---
-- ## Install _requirements.txt_**
+- ## Install _requirements.txt_
   
   Install the dependencies listed in the _requirements.txt_ file within the newly created environment.
   
@@ -55,7 +55,7 @@
 
 ---
 
-- ## Create env file** in project root directory :
+- ## Create env file in project root directory :
   ```
   # Source
   SRC_POSTGRES_DB=...
@@ -83,7 +83,7 @@
   DIR_LOG=...              # <project_dir>/logs/
     ```
 
-- # Run Data Sources & Data Warehouses** :
+- # Run Data Sources & Data Warehouses :
   ```
   docker compose up -d
   ```
