@@ -212,6 +212,30 @@ models:
               pk_table_name: ref('dim_date')
               pk_column_name: date_id
 
+      - name: airline_id
+        description: "Foreign key from dim_airlines"
+        tests:
+          - not_null
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_airlines')
+              pk_column_name: airline_id
+
+      - name: airport_src
+        description: "Foreign key from dim_airports that refer to the airport where the flight departs from."
+        tests:
+          - not_null
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_airports')
+              pk_column_name: airport_id
+
+      - name: airport_dst
+        description: "Foreign key from dim_airports that refer to the airport where the flight arrives at."
+        tests:
+          - not_null
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_airports')
+              pk_column_name: airport_id
+
       - name: max_price
         description: "The highest price observed for the flight on the given date."
         tests:
